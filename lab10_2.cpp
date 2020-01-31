@@ -25,8 +25,8 @@ int findYugiAction(int s){
 	if(s == 9) return 2; // Yugi will definitely stay (2) when current score (s) is equal to 9
 	else if(s < 6) return 1; // Yugi will definitely draw (1) when current score (s) is less than 6
 	else{ int S = rand()%100+1;
-		if(S > 31) return 2;// If current score is 6,7,8, Yugi will draw with probability 69% and will stay with probability 31% 
-		else if (S <= 31) return 1;// Write conditions here using random number 
+		if(S > 31) return 1;// If current score is 6,7,8, Yugi will draw with probability 69% and will stay with probability 31% 
+		else if (S <= 31) return 2;// Write conditions here using random number 
 	}
 }
 
